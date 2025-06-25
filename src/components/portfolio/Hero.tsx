@@ -15,7 +15,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <p className='text-xl text-center mt-8 max-w-2xl'>From startups to enterprise solutions, we've helped clients across industries bring their ideas to life through clean design, smart development, and scalable strategy.</p>
+          <p className='text-xl text-center mt-8 max-w-2xl'>From startups to enterprise solutions, we&apos;ve helped clients across industries bring their ideas to life through clean design, smart development, and scalable strategy.</p>
         </div>
       </div>
     </div>

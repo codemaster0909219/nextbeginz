@@ -46,9 +46,9 @@ export function Service() {
       <div className="container">
         <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">Our Services</h2>
         <div className='max-w-xl mx-auto'>
-        <p className="text-center mt-5 text-xl text-white/70">
-          Whether you're launching a startup or scaling your enterprise, we deliver results-driven design, development, and strategy—all in one place.
-        </p>
+          <p className="text-center mt-5 text-xl text-white/70">
+            Whether you&apos;re launching a startup or scaling your enterprise, we deliver results-driven design, development, and strategy—all in one place.
+          </p>
         </div>
         <div className="flex flex-col items-center justify-center sm:flex-row gap-4 mt-4">
           <Features data={data} />

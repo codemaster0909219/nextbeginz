@@ -20,7 +20,7 @@ export function Mission() {
             </div>
             <div className="flex flex-col space-y-4">
               <h1 className="text-3xl">Unlock Additional Income Opportunities</h1>
-              <p className="text-xl text-gray-400">Beyond job placement, we also assist clients in discovering reliable side income streams. Whether you're seeking freelance work, digital business opportunities, or part-time consulting, our team offers personalized support when requested — empowering you to build financial resilience alongside your primary career path.</p>
+              <p className="text-xl text-gray-400">Beyond job placement, we also assist clients in discovering reliable side income streams. Whether you&apos;re seeking freelance work, digital business opportunities, or part-time consulting, our team offers personalized support when requested — empowering you to build financial resilience alongside your primary career path.</p>
             </div>
           </div>
         </div>

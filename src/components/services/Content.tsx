@@ -14,7 +14,6 @@ export const Services = () => {
           title="Custom Development"
           description="We craft secure, high-performance web and mobile applications that align with your exact business needs. Whether you're launching an MVP or rebuilding an enterprise system, we deliver code that's clean, scalable, and production-ready."
           graphic={
-            // eslint-disable-next-line tailwindcss/no-contradicting-classname
             <div className="h-80 bg-[url(https://res.cloudinary.com/eldoraui/image/upload/v1734021365/profile_ldoiwc.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
           fade={["bottom"]}
@@ -25,7 +24,6 @@ export const Services = () => {
           title="UI/UX Design"
           description="Using Figma and other modern tools, we design intuitive interfaces that focus on user behavior, accessibility, and conversion. Every design decision is backed by usability principles and real-world experience."
           graphic={
-            // eslint-disable-next-line tailwindcss/no-contradicting-classname
             <div className="absolute inset-0 bg-[url(https://res.cloudinary.com/eldoraui/image/upload/v1734021357/competitors_ouucah.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
           fade={["bottom"]}
