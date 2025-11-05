@@ -1,3 +1,13 @@
+export interface Job {
+  id: string;
+  title: string;
+  description: string;
+  locations: string[];
+  tags?: string[];
+  // applyUrl: string;
+  fullDescription: string;
+}
+
 export const jobs: Job[] = [
   {
     id: "local-partnership-coordinator-americas",

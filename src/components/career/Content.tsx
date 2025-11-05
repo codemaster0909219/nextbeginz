@@ -5,6 +5,19 @@ import { SoftWaveBackground } from "../ui/SoftWavebg";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Link from "next/link";
 
+interface Job {
+  id: string;
+  title: string;
+  description: string;
+  locations: string[];
+  tags?: string[];
+}
+
+interface JobCardProps {
+  job: Job;
+  index: number;
+}
+
 export const Content = () => {
   return (
     
@@ -22,14 +35,14 @@ export const Content = () => {
 
 // --------- 3D Job Card ----------
 
-function JobCard({ job, index }) {
+function JobCard({ job, index }: JobCardProps) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
   const rotateX = useTransform(y, [-50, 50], [15, -15]);
   const rotateY = useTransform(x, [-50, 50], [-15, 15]);
 
-  const handleMove = (e) => {
+  const handleMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     x.set(e.clientX - rect.left - rect.width / 2);
     y.set(e.clientY - rect.top - rect.height / 2);
@@ -95,7 +108,7 @@ function JobCard({ job, index }) {
                 </Link>
                 {/* Apply Button */}
                 <a
-                  href={job.applyUrl || `mailto:kylesuttonn87@gmail.com?subject=Job Application: ${job.title}`}
+                  href={`mailto:kylesuttonn87@gmail.com?subject=Job Application: ${job.title}`}
                   className="
                     bg-purple-500/80 hover:bg-purple-500 active:bg-purple-600 
                     text-white px-4 py-2 rounded-lg font-medium
