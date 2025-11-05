@@ -24,7 +24,7 @@ export const Content = () => {
                     {/* profile */}
                     <div className="flex items-center gap-4 mb-6">
                         <Image
-                        src={t.avatar}
+                        src={t.avatar ?? "/marina.png"}
                         alt={t.name}
                         width={56}
                         height={56}
