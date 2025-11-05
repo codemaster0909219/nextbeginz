@@ -30,10 +30,10 @@ export const CallToAction = () => {
 
         <h2 className="font-bold text-5xl sm:text-6xl tracking-tighter">Get Instant Access</h2>
         <p className="text-xl text-white/70  mt-5">Whether you have a clear plan or just an idea, we’ll help you define next steps and bring it to life.</p>
-        <form className="mt-10 flex flex-col gap-2.5 max-w-sm mx-auto sm:flex-row">
+        {/* <form className="mt-10 flex flex-col gap-2.5 max-w-sm mx-auto sm:flex-row">
           <input type="email" placeholder="" className="h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF] sm:flex-1"/>
-          <button className="bg-white text-black h-12 rounded-lg px-5">Get access</button>
-        </form>
+          <button className="bg-white text-black h-12 rounded-lg px-5">Get Access</button>
+        </form> */}
       </div>
 
 

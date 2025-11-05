@@ -3,8 +3,9 @@ import Image from "next/image";
 import MissionImage from "@/assets/images/mission.jpg"
 export function Mission() {
   return (
-    <div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] py-[72px] sm:py-24 container">
-      <div className="mt-[64px] px-5 sm:px-20  flex-col justify-center container space-y-12">
+    <div className="w-full bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] text-white py-[72px] sm:py-24 relative overflow-hidden">
+      
+      <div className="max-w-7xl mx-auto px-5 sm:px-20 flex flex-col justify-center space-y-12">
         <h1 className="text-4xl text-center">Your Success, Our Mission - <strong>Comprehensive Job Support</strong></h1>
         <p className="text-2xl text-gray-400">At [Your Company Name], we’re committed to helping individuals overcome the challenges of today’s job market. Gone are the days when only advanced qualifications or specialized experience guaranteed employment. Our expert team has redefined the job search process, supporting countless clients with tailored strategies, practical tools, and unwavering dedication.</p>
         <div className="flex flex-col space-y-8 xl:space-x-16 justify-center items-center xl:flex-row">

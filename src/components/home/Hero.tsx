@@ -28,8 +28,10 @@ export const Hero = () => {
           <p className='text-xl text-center mt-8 max-w-md'>We help companies grow, streamline, and succeed with innovative technology and tailored strategies.</p>
         </div>
         <div className="flex justify-center mt-8 space-x-4">
-          <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Get a Free Quote</button>
+          {/* <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Get a Free Quote</button> */}
+          <a href="mailto:kylesuttonn87@gmail.com?subject=Contact%20Request">
           <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Contact Us</button>
+          </a>
         </div>
       </div>
     </div>
