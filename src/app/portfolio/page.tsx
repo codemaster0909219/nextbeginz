@@ -8,12 +8,12 @@ import { Footer } from "@/components/Footer";
 export default function Portfolio() {
   return (
     <>
-      <div className="overflow-x-hidden">
+      {/* <div className="overflow-x-hidden"> */}
         <Header />
         <Hero />
         <Portfolios />
         <CallToAction />
-      </div>
+      {/* </div> */}
       <Footer />
     </>
   );

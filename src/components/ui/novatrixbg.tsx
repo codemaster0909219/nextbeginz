@@ -108,7 +108,7 @@ export const Novatrix: React.FC<NovatrixProps> = () => {
 
 export const Background = () => {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen">
       <Novatrix />
     </div>
   );

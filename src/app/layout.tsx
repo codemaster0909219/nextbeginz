@@ -6,7 +6,7 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Brainik",
+  title: "NextBegin",
   description: "Template for saas applications with dark theme",
 };
 
@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/nextbegin_32.svg" sizes="any" />
+      </head>
       <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
     </html>
   );

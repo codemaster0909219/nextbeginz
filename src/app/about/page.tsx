@@ -9,14 +9,15 @@ import { Footer } from "@/components/Footer";
 export default function About() {
   return (
     <>
-      <div className="overflow-x-hidden">
+      {/* <div className="overflow-x-hidden"> */}
         <Header />
         <Hero />
         <AboutUs />
         <Mission />
         <CallToAction />
-      </div>
-      <Footer />
+        <Footer />
+      {/* </div> */}
+      
     </>
   );
 }
