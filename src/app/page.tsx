@@ -10,7 +10,7 @@ import { Testimonials } from "@/components/Testimonials";
 export default function Home() {
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div className="w-full">
         <Header />
         <Hero />
         <LogoTicker />
@@ -18,8 +18,9 @@ export default function Home() {
         
         <Testimonials/>
         <CallToAction />
+        <Footer />
       </div>
-      <Footer />
+      
     </>
   );
 }

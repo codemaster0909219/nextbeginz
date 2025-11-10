@@ -4,15 +4,15 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import LogoImage from '../assets/icons/logo.svg';
+import LogoImage from '../assets/icons/nextbegin_header_64.svg';
 import MenuIcon from '../assets/icons/menu.svg';
 import { motion } from "framer-motion";
 import { Link } from "@/components/ui/link";
-import {
-  PlusGrid,
-  PlusGridItem,
-  PlusGridRow,
-} from "@/components/ui/plusgrid";
+// import {
+//   PlusGrid,
+//   PlusGridItem,
+//   PlusGridRow,
+// } from "@/components/ui/plusgrid";
 import { Logo } from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
@@ -27,20 +27,31 @@ const links = [
 
 function DesktopNav() {
   return (
-    <nav className="relative hidden lg:flex">
+    <nav className="relative hidden lg:flex items-center gap-2 overflow-x-hidden">
       {links.map(({ href, label }) => (
-        <PlusGridItem key={href} className="relative flex">
-          <Link
-            href={href}
-            className="flex items-center px-4 py-3 text-base font-medium text-white  bg-blend-multiply data-[hover]:bg-black/[2.5%]"
-          >
-            {label}
-          </Link>
-        </PlusGridItem>
+        <Link
+          key={href}
+          href={href}
+          className="
+  relative flex items-center h-16 px-5
+  text-lg font-medium text-white rounded-md
+  transition-all duration-300
+  border border-transparent
+  hover:border-[#22f6ff]
+hover:shadow-[0_0_18px_#22f6ff]
+hover:bg-[#22f6ff]/10
+
+"
+
+
+        >
+          {label}
+        </Link>
       ))}
     </nav>
   );
 }
+
 
 function MobileNavButton() {
   return (
@@ -77,7 +88,7 @@ function MobileNav() {
           </motion.div>
         ))}
       </div>
-      <div className="absolute left-1/2 w-screen -translate-x-1/2">
+      <div className="absolute">
         <div className="absolute inset-x-0 top-0 border-t border-black/5 dark:border-white/5" />
         <div className="absolute inset-x-0 top-2 border-t border-black/5 dark:border-white/5" />
       </div>
@@ -87,32 +98,24 @@ function MobileNav() {
 
 export function Header({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header">
-      <PlusGrid>
-        <PlusGridRow className="relative flex justify-around bg-black">
-          <div className="relative flex gap-6">
-            <PlusGridItem className="py-3">
-              <Link href="/" title="Home">
-                <div className="flex items-center space-x-2">
-                  {" "}
-                  {/* Flex container to align items horizontally */}
-                  <div className="-mt-1 px-3">
-                    <LogoImage className="h-12 w-12 relative mt-1" />
-                  </div>
-                </div>
-              </Link>
-            </PlusGridItem>
-            {banner && (
-              <div className="relative hidden items-center py-3 lg:flex">
-                {banner}
-              </div>
-            )}
-          </div>
-          <DesktopNav />
-          <MobileNavButton />
-        </PlusGridRow>
-      </PlusGrid>
+    <Disclosure as="header" className="bg-black overflow-x-hidden">
+
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 h-16">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
+          <LogoImage className="w-18 h-18" />
+        </Link>
+
+        {/* Desktop Nav */}
+        <DesktopNav />
+
+        {/* Mobile button */}
+        <MobileNavButton />
+      </div>
+
       <MobileNav />
     </Disclosure>
   );
 }
+

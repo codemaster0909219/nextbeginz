@@ -9,7 +9,7 @@ export type Testimonial = {
 };
 
 export type Job = {
-  id: string;   
+  id: string;
   title: string;
   locations: string[]; // e.g., ["Remote (Anywhere)"] or ["Warsaw, Poland", "Remote"]
   tags?: string[];     // e.g., ["Remote", "Full-time"]

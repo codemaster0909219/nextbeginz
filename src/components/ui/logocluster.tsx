@@ -56,7 +56,7 @@ function Circle({
       }}
       style={{ "--opacity": opacity } as React.CSSProperties}
       className={clsx(
-        "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full",
+        "absolute top-1/2 -translate-y-1/2 rounded-full",
         "bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)]",
         "ring-1 ring-inset ring-blue-500/[8%]",
       )}
@@ -124,7 +124,7 @@ export function LogoCluster() {
   return (
     <div aria-hidden="true" className="relative h-full overflow-hidden">
       <Circles />
-      <div className="absolute left-1/2 h-full w-[26rem] -translate-x-1/2">
+      <div className="absolute h-full w-[26rem]">
         <MainLogo />
         <Logo
           src="https://res.cloudinary.com/eldoraui/image/upload/v1734020756/we-work-remotely_e9nrwy.svg"
