@@ -1,8 +1,9 @@
 "use client";
 import { HackerBackground } from "../ui/hackerbg";
 import { useEffect, useState } from "react";
-import { TextComponent } from "../ui/featurefour";
-import { cn } from "../lib/utils";
+import Image from "next/image";
+// import { TextComponent } from "../ui/featurefour";
+// import { cn } from "../lib/utils";
 
 const data = [
   {
@@ -104,16 +105,16 @@ export const Portfolios = () => {
 
             <div className="relative h-96 w-full overflow-hidden rounded-2xl border border-white/10 bg-black/40 md:h-[500px] backdrop-blur-lg shadow-xl">
               {data.map((item, index) => (
-                <img
+                <Image
                   key={item.title}
                   src={item.srcImage}
                   alt={item.title}
+                  fill
                   className={`
-                    absolute h-full w-full object-cover transition-all duration-500 
-                    ${featureOpen === index 
-                      ? "opacity-100 scale-100" 
-                      : "opacity-0 scale-95"}
+                    object-cover absolute transition-all duration-500
+                    ${featureOpen === index ? "opacity-100 scale-100" : "opacity-0 scale-95"}
                   `}
+                  sizes="100%"
                 />
               ))}
             </div>

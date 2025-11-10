@@ -5,17 +5,16 @@ import { jobs } from "@/config/jobs";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import { SuccessModal } from "@/components/ui/SuccessModal";
-import { Linkedin } from "lucide-react";
+// import { Linkedin } from "lucide-react";
 
 export default function JobDetail({ params }: any) {
   const job = jobs.find((j) => j.id === params.id);
-  if (!job) return <div className="text-white p-10">Job not found.</div>;
 
   const formRef = useRef<HTMLFormElement>(null);
 
   const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState(false);
-
+  if (!job) return <div className="text-white p-10">Job not found.</div>;
   async function submitApplication(e: any) {
     e.preventDefault();
     if (!formRef.current) return;
@@ -23,19 +22,19 @@ export default function JobDetail({ params }: any) {
     setSending(true);
 
     //1. Upload resume to Google Drive
-    let resumeUrl = "";
-    if (formRef.current.resume.files[0]) {
-      const formData = new FormData();
-      formData.append("resume", formRef.current.resume.files[0]);
+    // let resumeUrl = "";
+    // if (formRef.current.resume.files[0]) {
+    //   const formData = new FormData();
+    //   formData.append("resume", formRef.current.resume.files[0]);
 
-      const uploadRes = await fetch("/api/upload-resume", {
-        method: "POST",
-        body: formData,
-      });
+    //   const uploadRes = await fetch("/api/upload-resume", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
 
-      const result = await uploadRes.json();
-      resumeUrl = result.url;
-    }
+    //   const result = await uploadRes.json();
+    //   resumeUrl = result.url;
+    // }
 
     try {
       await emailjs.send(
