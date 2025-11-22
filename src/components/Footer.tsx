@@ -6,14 +6,14 @@ export const Footer = () => {
     <footer className='py-5 bg-black text-white/60 border-t border-white/20'>
       <div className="container">
         <div className='flex flex-col gap-5 sm:flex-row sm:justify-between'>
-          <div className="text-center">2025 HWRJ All rights are reserved</div>
+          <div className="text-center">2025 Nextbegin — Engineering Intelligence. All rights reserved</div>
           
           <ul className='flex justify-center gap-4 text-xl'>
 
             {/* LinkedIn */}
             <li>
               <a 
-                href="https://www.linkedin.com/in/YOUR_USERNAME" 
+                href="https://www.linkedin.com/company/nextbeginz/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
@@ -25,7 +25,7 @@ export const Footer = () => {
             {/* Telegram */}
             <li>
               <a 
-                href="https://t.me/YOUR_TELEGRAM_USERNAME"
+                href="https://t.me/nextbegin"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
@@ -37,7 +37,7 @@ export const Footer = () => {
             {/* WhatsApp */}
             <li>
               <a 
-                href="https://wa.me/YOUR_PHONE_NUMBER" 
+                href="https://wa.me/12394504113" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
@@ -47,14 +47,14 @@ export const Footer = () => {
             </li>
 
             {/* Teamspeak — replace with your server */}
-            <li>
+            {/* <li>
               <a 
                 href="ts3server://YOUR_TEAMSPEAK_SERVER_ADDRESS"
                 className="hover:text-white transition-colors"
               >
                 <SiTeamspeak className="w-5 h-5" />
               </a>
-            </li>
+            </li> */}
 
           </ul>
         </div>
