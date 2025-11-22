@@ -15,7 +15,12 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <p className='text-xl text-center mt-8 max-w-2xl'>We help businesses thrive in the digital age by delivering modern, scalable, and user-focused solutions. From design and development to strategy and support, our services are built to drive growth and deliver results.</p>
+          {/* <p className='text-xl text-center mt-8 max-w-2xl'>We help businesses thrive in the digital age by delivering modern, scalable, and user-focused solutions. From design and development to strategy and support, our services are built to drive growth and deliver results.</p> */}
+          <p className="text-xl text-center mt-8 max-w-2xl">
+            We engineer intelligent systems powered by advanced machine learning, real-time inference, and next-generation automation. From custom LLM 
+            integrations to AI agents, real-time translation engines, and enterprise-grade 
+            automation workflows — we build the AI that builds your future.
+          </p>
         </div>
       </div>
     </div>

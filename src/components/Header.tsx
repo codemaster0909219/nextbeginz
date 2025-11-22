@@ -33,17 +33,14 @@ function DesktopNav() {
           key={href}
           href={href}
           className="
-  relative flex items-center h-16 px-5
-  text-lg font-medium text-white rounded-md
-  transition-all duration-300
-  border border-transparent
-  hover:border-[#22f6ff]
-hover:shadow-[0_0_18px_#22f6ff]
-hover:bg-[#22f6ff]/10
-
-"
-
-
+              relative flex items-center h-16 px-5
+              text-lg font-medium text-white rounded-md
+              transition-all duration-300
+              border border-transparent
+              hover:border-[#22f6ff]
+              hover:shadow-[0_0_18px_#22f6ff]
+              hover:bg-[#22f6ff]/10 
+            "
         >
           {label}
         </Link>
@@ -51,7 +48,6 @@ hover:bg-[#22f6ff]/10
     </nav>
   );
 }
-
 
 function MobileNavButton() {
   return (
@@ -98,7 +94,7 @@ function MobileNav() {
 
 export function Header({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="bg-black overflow-x-hidden">
+    <Disclosure as="header" className="bg-black overflow-x-hidden pt-1">
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 h-16">
         

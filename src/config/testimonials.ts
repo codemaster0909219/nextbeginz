@@ -2,8 +2,8 @@ import { Testimonial } from "@/lib/types";
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Tuan Nguyen",
-    role: "CTO",
+    name: "Jesse Vien",
+    role: "Co-Founder & CTO",
     company: "SomeTech Co.",
     quote:
       "Their AI automation saved us ~40% of operational time — a genuine game-changer.",
@@ -32,7 +32,7 @@ export const testimonials: Testimonial[] = [
     calendly: "https://calendly.com/johnpark/meeting",
   },
   {
-    name: "Jesse Vien",
+    name: "Tuan Nguyen",
     role: "Senior Machine Learning Architect",
     company: "VertexEdge Technologies",
     quote:
